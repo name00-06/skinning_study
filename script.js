@@ -274,8 +274,8 @@ onload = function()
       mat.rotate(a_bMatrix[1], angle, [1.0, 0.0, 0.0], a_lMatrix[1]);// src angle axis dest
 
       // モデルのワールド行列の生成【ここをなんとかする】
-      a_lMatrix[0] = a_lMatrix[1];
-      a_wMatrix[1] = a_wMatrix[0];
+      a_lMatrix[0] = a_wMatrix[0];
+      a_wMatrix[1] = a_lMatrix[1];
 	    
       // モデル描画
       gl.useProgram(prg_skin);
